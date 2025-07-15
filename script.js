@@ -97,7 +97,7 @@ function actualizarDesbloqueos() {
     // Verificar si se cumplen prerrequisitos normales
     let puedeDesbloquear = reqs.every(r => aprobados.includes(r));
 
-    // Reglas especiales con créditos para ciertos módulos
+    // Reglas casos especiales de uno u otro requisito
     if (destino === 'iic1253') {
       puedeDesbloquear = aprobados.includes('mat1207') && aprobados.includes('iic1001') ||
       aprobados.includes('mat1203');
